@@ -15,6 +15,8 @@
 		F122E4801B5840760015E20C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F122E47F1B5840760015E20C /* Images.xcassets */; };
 		F122E4831B5840760015E20C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F122E4811B5840760015E20C /* LaunchScreen.xib */; };
 		F122E48F1B5840760015E20C /* Race_to_the_TopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F122E48E1B5840760015E20C /* Race_to_the_TopTests.m */; };
+		F122E49A1B5840B50015E20C /* A1SSpaceShipView.m in Sources */ = {isa = PBXBuildFile; fileRef = F122E4991B5840B50015E20C /* A1SSpaceShipView.m */; };
+		F122E49D1B5851870015E20C /* A1SHouseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F122E49C1B5851870015E20C /* A1SHouseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		F122E4881B5840760015E20C /* Race to the TopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Race to the TopTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F122E48D1B5840760015E20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F122E48E1B5840760015E20C /* Race_to_the_TopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Race_to_the_TopTests.m; sourceTree = "<group>"; };
+		F122E4981B5840B50015E20C /* A1SSpaceShipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A1SSpaceShipView.h; sourceTree = "<group>"; };
+		F122E4991B5840B50015E20C /* A1SSpaceShipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A1SSpaceShipView.m; sourceTree = "<group>"; };
+		F122E49B1B5851870015E20C /* A1SHouseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A1SHouseView.h; sourceTree = "<group>"; };
+		F122E49C1B5851870015E20C /* A1SHouseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A1SHouseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +89,8 @@
 		F122E46E1B5840760015E20C /* Race to the Top */ = {
 			isa = PBXGroup;
 			children = (
-				F122E4731B5840760015E20C /* AppDelegate.h */,
-				F122E4741B5840760015E20C /* AppDelegate.m */,
-				F122E4791B5840760015E20C /* ViewController.h */,
-				F122E47A1B5840760015E20C /* ViewController.m */,
+				F122E49E1B58518C0015E20C /* House */,
+				F122E49F1B5851960015E20C /* Spaceship */,
 				F122E47C1B5840760015E20C /* Main.storyboard */,
 				F122E47F1B5840760015E20C /* Images.xcassets */,
 				F122E4811B5840760015E20C /* LaunchScreen.xib */,
@@ -99,6 +103,10 @@
 		F122E46F1B5840760015E20C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F122E4731B5840760015E20C /* AppDelegate.h */,
+				F122E4741B5840760015E20C /* AppDelegate.m */,
+				F122E4791B5840760015E20C /* ViewController.h */,
+				F122E47A1B5840760015E20C /* ViewController.m */,
 				F122E4701B5840760015E20C /* Info.plist */,
 				F122E4711B5840760015E20C /* main.m */,
 			);
@@ -120,6 +128,25 @@
 				F122E48D1B5840760015E20C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F122E49E1B58518C0015E20C /* House */ = {
+			isa = PBXGroup;
+			children = (
+				F122E49B1B5851870015E20C /* A1SHouseView.h */,
+				F122E49C1B5851870015E20C /* A1SHouseView.m */,
+			);
+			name = House;
+			sourceTree = "<group>";
+		};
+		F122E49F1B5851960015E20C /* Spaceship */ = {
+			isa = PBXGroup;
+			children = (
+				F122E4981B5840B50015E20C /* A1SSpaceShipView.h */,
+				F122E4991B5840B50015E20C /* A1SSpaceShipView.m */,
+			);
+			name = Spaceship;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +251,10 @@
 			files = (
 				F122E4751B5840760015E20C /* AppDelegate.m in Sources */,
 				F122E4721B5840760015E20C /* main.m in Sources */,
+				F122E49A1B5840B50015E20C /* A1SSpaceShipView.m in Sources */,
 				F122E47B1B5840760015E20C /* ViewController.m in Sources */,
 				F122E4781B5840760015E20C /* Race_to_the_Top.xcdatamodeld in Sources */,
+				F122E49D1B5851870015E20C /* A1SHouseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
