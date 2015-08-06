@@ -2,41 +2,68 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WJJ-fk-IfY">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="A1SSpaceShipView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="tq9-ur-BnK">
             <objects>
-                <viewController id="WJJ-fk-IfY" sceneMemberID="viewController">
+                <viewController id="WJJ-fk-IfY" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Af-xj-cxC"/>
                         <viewControllerLayoutGuide type="bottom" id="9LG-gh-UZx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9Rm-Sh-fIX" customClass="A1SHouseView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mtfuji.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JFR-TU-hYO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFK-8W-SQo" customClass="A1SPathView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score 20000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS3-IS-0Sa">
+                                        <rect key="frame" x="400" y="8" width="192" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="9a3-Bz-89T"/>
+                                            <constraint firstAttribute="width" constant="192" id="TCf-1A-HBZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="0.68219520840000003" green="0.75129897189999995" blue="0.83842329550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.059999999999999998" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="nS3-IS-0Sa" firstAttribute="top" secondItem="ZFK-8W-SQo" secondAttribute="topMargin" id="JjE-Mv-xf9"/>
+                                    <constraint firstItem="nS3-IS-0Sa" firstAttribute="trailing" secondItem="ZFK-8W-SQo" secondAttribute="trailingMargin" id="fwy-gP-k0R"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZFK-8W-SQo" firstAttribute="top" secondItem="JFR-TU-hYO" secondAttribute="top" id="9ET-kg-jYc"/>
+                            <constraint firstItem="JFR-TU-hYO" firstAttribute="bottom" secondItem="9LG-gh-UZx" secondAttribute="top" id="BMc-91-S0M"/>
+                            <constraint firstItem="JFR-TU-hYO" firstAttribute="top" secondItem="9Rm-Sh-fIX" secondAttribute="top" id="MyR-Jw-cmG"/>
+                            <constraint firstAttribute="trailing" secondItem="JFR-TU-hYO" secondAttribute="trailing" id="XBl-Os-ADo"/>
+                            <constraint firstItem="ZFK-8W-SQo" firstAttribute="bottom" secondItem="9LG-gh-UZx" secondAttribute="top" id="bYc-2P-Beg"/>
+                            <constraint firstItem="ZFK-8W-SQo" firstAttribute="leading" secondItem="JFR-TU-hYO" secondAttribute="leading" id="kzS-fD-M0m"/>
+                            <constraint firstItem="ZFK-8W-SQo" firstAttribute="trailing" secondItem="JFR-TU-hYO" secondAttribute="trailing" id="lU1-QE-x8w"/>
+                            <constraint firstItem="JFR-TU-hYO" firstAttribute="leading" secondItem="9Rm-Sh-fIX" secondAttribute="leading" id="uaN-K2-jSR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblScore" destination="nS3-IS-0Sa" id="rtP-AK-T5z"/>
+                        <outlet property="pathView" destination="ZFK-8W-SQo" id="Qkf-cN-DJf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KpT-Xx-ggd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273.5" y="322"/>
+            <point key="canvasLocation" x="1027" y="263"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mtfuji.jpg" width="656" height="491"/>
+    </resources>
 </document>

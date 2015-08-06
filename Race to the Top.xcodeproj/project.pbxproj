@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502E6B5F1B6ECC6000266939 /* A1SPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 502E6B5E1B6ECC6000266939 /* A1SPathView.m */; };
 		F122E4721B5840760015E20C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F122E4711B5840760015E20C /* main.m */; };
 		F122E4751B5840760015E20C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F122E4741B5840760015E20C /* AppDelegate.m */; };
 		F122E4781B5840760015E20C /* Race_to_the_Top.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F122E4761B5840760015E20C /* Race_to_the_Top.xcdatamodeld */; };
@@ -17,6 +18,8 @@
 		F122E48F1B5840760015E20C /* Race_to_the_TopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F122E48E1B5840760015E20C /* Race_to_the_TopTests.m */; };
 		F122E49A1B5840B50015E20C /* A1SSpaceShipView.m in Sources */ = {isa = PBXBuildFile; fileRef = F122E4991B5840B50015E20C /* A1SSpaceShipView.m */; };
 		F122E49D1B5851870015E20C /* A1SHouseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F122E49C1B5851870015E20C /* A1SHouseView.m */; };
+		F1D44D5F1B5D8ABA00520E4D /* A1SMountainPath.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D44D5E1B5D8ABA00520E4D /* A1SMountainPath.m */; };
+		F1E348261B59836C00C0EE65 /* mtfuji.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1E348251B59836C00C0EE65 /* mtfuji.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		502E6B5D1B6ECC6000266939 /* A1SPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A1SPathView.h; sourceTree = "<group>"; };
+		502E6B5E1B6ECC6000266939 /* A1SPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A1SPathView.m; sourceTree = "<group>"; };
 		F122E46C1B5840760015E20C /* Race to the Top.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Race to the Top.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F122E4701B5840760015E20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F122E4711B5840760015E20C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,6 +53,9 @@
 		F122E4991B5840B50015E20C /* A1SSpaceShipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A1SSpaceShipView.m; sourceTree = "<group>"; };
 		F122E49B1B5851870015E20C /* A1SHouseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A1SHouseView.h; sourceTree = "<group>"; };
 		F122E49C1B5851870015E20C /* A1SHouseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A1SHouseView.m; sourceTree = "<group>"; };
+		F1D44D5D1B5D8ABA00520E4D /* A1SMountainPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A1SMountainPath.h; sourceTree = "<group>"; };
+		F1D44D5E1B5D8ABA00520E4D /* A1SMountainPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A1SMountainPath.m; sourceTree = "<group>"; };
+		F1E348251B59836C00C0EE65 /* mtfuji.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mtfuji.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		502E6B601B6ECC6B00266939 /* A1SPathView */ = {
+			isa = PBXGroup;
+			children = (
+				502E6B5D1B6ECC6000266939 /* A1SPathView.h */,
+				502E6B5E1B6ECC6000266939 /* A1SPathView.m */,
+			);
+			name = A1SPathView;
+			sourceTree = "<group>";
+		};
 		F122E4631B5840760015E20C = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +106,12 @@
 		F122E46E1B5840760015E20C /* Race to the Top */ = {
 			isa = PBXGroup;
 			children = (
+				502E6B601B6ECC6B00266939 /* A1SPathView */,
+				F1D44D601B5D8AC700520E4D /* A1SMountainPath */,
 				F122E49E1B58518C0015E20C /* House */,
 				F122E49F1B5851960015E20C /* Spaceship */,
 				F122E47C1B5840760015E20C /* Main.storyboard */,
+				F1E348251B59836C00C0EE65 /* mtfuji.jpg */,
 				F122E47F1B5840760015E20C /* Images.xcassets */,
 				F122E4811B5840760015E20C /* LaunchScreen.xib */,
 				F122E4761B5840760015E20C /* Race_to_the_Top.xcdatamodeld */,
@@ -147,6 +167,15 @@
 			);
 			name = Spaceship;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		F1D44D601B5D8AC700520E4D /* A1SMountainPath */ = {
+			isa = PBXGroup;
+			children = (
+				F1D44D5D1B5D8ABA00520E4D /* A1SMountainPath.h */,
+				F1D44D5E1B5D8ABA00520E4D /* A1SMountainPath.m */,
+			);
+			name = A1SMountainPath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E348261B59836C00C0EE65 /* mtfuji.jpg in Resources */,
 				F122E47E1B5840760015E20C /* Main.storyboard in Resources */,
 				F122E4831B5840760015E20C /* LaunchScreen.xib in Resources */,
 				F122E4801B5840760015E20C /* Images.xcassets in Resources */,
@@ -250,9 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F122E4751B5840760015E20C /* AppDelegate.m in Sources */,
+				F1D44D5F1B5D8ABA00520E4D /* A1SMountainPath.m in Sources */,
 				F122E4721B5840760015E20C /* main.m in Sources */,
 				F122E49A1B5840B50015E20C /* A1SSpaceShipView.m in Sources */,
 				F122E47B1B5840760015E20C /* ViewController.m in Sources */,
+				502E6B5F1B6ECC6000266939 /* A1SPathView.m in Sources */,
 				F122E4781B5840760015E20C /* Race_to_the_Top.xcdatamodeld in Sources */,
 				F122E49D1B5851870015E20C /* A1SHouseView.m in Sources */,
 			);
@@ -383,6 +415,7 @@
 				INFOPLIST_FILE = "Race to the Top/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -393,6 +426,7 @@
 				INFOPLIST_FILE = "Race to the Top/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -449,6 +483,7 @@
 				F122E4941B5840760015E20C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F122E4951B5840760015E20C /* Build configuration list for PBXNativeTarget "Race to the TopTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +492,7 @@
 				F122E4971B5840760015E20C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

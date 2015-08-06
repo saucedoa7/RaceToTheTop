@@ -7,6 +7,7 @@
 //
 
 #import "A1SHouseView.h"
+#import "A1SPathView.h"
 
 @implementation A1SHouseView
 
